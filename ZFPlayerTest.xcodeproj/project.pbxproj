@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF502EF04B1A5AF5745FF3C7 /* Pods_ZFPlayerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ADC0A83023FE81DEA5A426 /* Pods_ZFPlayerTest.framework */; };
+		FE0E996B2899130B0017E6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E996A2899130B0017E6BC /* AppDelegate.swift */; };
+		FE0E996F2899130B0017E6BC /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E996E2899130B0017E6BC /* PreviewViewController.swift */; };
+		FE0E99722899130B0017E6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0E99702899130B0017E6BC /* Main.storyboard */; };
+		FE0E99742899130D0017E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0E99732899130D0017E6BC /* Assets.xcassets */; };
+		FE0E99772899130D0017E6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0E99752899130D0017E6BC /* LaunchScreen.storyboard */; };
+		FE0E997F289915420017E6BC /* BasePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E997E289915420017E6BC /* BasePlayerViewController.swift */; };
+		FE0E99A2289915A10017E6BC /* ZFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9983289915A10017E6BC /* ZFUtilities.m */; };
+		FE0E99A3289915A10017E6BC /* UIView+ZFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9984289915A10017E6BC /* UIView+ZFFrame.m */; };
+		FE0E99A4289915A10017E6BC /* ZFAVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9988289915A10017E6BC /* ZFAVPlayerManager.m */; };
+		FE0E99A5289915A10017E6BC /* ZFVolumeBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E998A289915A10017E6BC /* ZFVolumeBrightnessView.m */; };
+		FE0E99A6289915A10017E6BC /* ZFLandScapeControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E998D289915A10017E6BC /* ZFLandScapeControlView.m */; };
+		FE0E99A7289915A10017E6BC /* ZFNetworkSpeedMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E998E289915A10017E6BC /* ZFNetworkSpeedMonitor.m */; };
+		FE0E99A8289915A10017E6BC /* ZFRippleEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9991289915A10017E6BC /* ZFRippleEffectView.m */; };
+		FE0E99A9289915A10017E6BC /* ZFPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE0E9992289915A10017E6BC /* ZFPlayer.bundle */; };
+		FE0E99AA289915A10017E6BC /* ZFResoureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9993289915A10017E6BC /* ZFResoureLoader.m */; };
+		FE0E99AB289915A10017E6BC /* ZFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9996289915A10017E6BC /* ZFSliderView.m */; };
+		FE0E99AC289915A10017E6BC /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9998289915A10017E6BC /* ZFPlayerControlView.m */; };
+		FE0E99AD289915A10017E6BC /* ZFSmallFloatControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9999289915A10017E6BC /* ZFSmallFloatControlView.m */; };
+		FE0E99AE289915A10017E6BC /* ZFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E999A289915A10017E6BC /* ZFLoadingView.m */; };
+		FE0E99AF289915A10017E6BC /* ZFSpeedLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E999B289915A10017E6BC /* ZFSpeedLoadingView.m */; };
+		FE0E99B0289915A10017E6BC /* ZFPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E999E289915A10017E6BC /* ZFPortraitControlView.m */; };
+		FE0E99B1289915A10017E6BC /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E999F289915A10017E6BC /* UIImageView+ZFCache.m */; };
+		FE0E99B6289915BB0017E6BC /* RoundCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99B2289915BA0017E6BC /* RoundCornersButton.swift */; };
+		FE0E99B7289915BB0017E6BC /* RoundCornersImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99B3289915BA0017E6BC /* RoundCornersImageView.swift */; };
+		FE0E99B8289915BB0017E6BC /* GlobalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99B4289915BB0017E6BC /* GlobalUtil.swift */; };
+		FE0E99B9289915BB0017E6BC /* RoundCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99B5289915BB0017E6BC /* RoundCornersView.swift */; };
+		FE0E99C8289915C30017E6BC /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99BB289915C30017E6BC /* UIButtonExtension.swift */; };
+		FE0E99C9289915C30017E6BC /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99BC289915C30017E6BC /* UIImageViewExtension.swift */; };
+		FE0E99CA289915C30017E6BC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99BD289915C30017E6BC /* UIColorExtension.swift */; };
+		FE0E99CB289915C30017E6BC /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99BE289915C30017E6BC /* UITextViewExtension.swift */; };
+		FE0E99CC289915C30017E6BC /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99BF289915C30017E6BC /* ArrayExtension.swift */; };
+		FE0E99CD289915C30017E6BC /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C0289915C30017E6BC /* UILabelExtension.swift */; };
+		FE0E99CE289915C30017E6BC /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C1289915C30017E6BC /* UITabBarItemExtension.swift */; };
+		FE0E99CF289915C30017E6BC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C2289915C30017E6BC /* UIViewControllerExtension.swift */; };
+		FE0E99D0289915C30017E6BC /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C3289915C30017E6BC /* UIStoryboardExtension.swift */; };
+		FE0E99D1289915C30017E6BC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C4289915C30017E6BC /* UIViewExtension.swift */; };
+		FE0E99D2289915C30017E6BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C5289915C30017E6BC /* Extensions.swift */; };
+		FE0E99D3289915C30017E6BC /* UICollectionViewLayoutAttributesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C6289915C30017E6BC /* UICollectionViewLayoutAttributesExtension.swift */; };
+		FE0E99D4289915C30017E6BC /* ProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99C7289915C30017E6BC /* ProtocolExtension.swift */; };
+		FE0E99D6289916120017E6BC /* ACThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99D5289916120017E6BC /* ACThumbnailGenerator.swift */; };
+		FE0E99D82899161E0017E6BC /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FE0E99D72899161E0017E6BC /* test.mp4 */; };
+		FE0E99DA289917620017E6BC /* BasePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99D9289917620017E6BC /* BasePlayerViewModel.swift */; };
+		FE0E99DD28991AC40017E6BC /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E99DC28991AC40017E6BC /* BaseUIViewController.swift */; };
+		FE10A3C8294B1A6800EC4CC5 /* AirplayControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10A3C7294B1A6700EC4CC5 /* AirplayControlViewModel.swift */; };
+		FE28BFD328DAC0A2009D4406 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE28BFD228DAC0A2009D4406 /* CollectionViewController.swift */; };
+		FE28BFD828DAC4AB009D4406 /* LittleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE28BFD628DAC4AA009D4406 /* LittleCell.swift */; };
+		FE28BFD928DAC4AB009D4406 /* LittleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE28BFD728DAC4AB009D4406 /* LittleCell.xib */; };
+		FE28BFDC28DAC5F9009D4406 /* BigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE28BFDA28DAC5F9009D4406 /* BigCell.swift */; };
+		FE28BFDD28DAC5F9009D4406 /* BigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE28BFDB28DAC5F9009D4406 /* BigCell.xib */; };
+		FE28BFDF28DACC31009D4406 /* ForCellPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE28BFDE28DACC31009D4406 /* ForCellPlayerView.swift */; };
+		FE28BFE328DAFC73009D4406 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE28BFE228DAFC73009D4406 /* TestViewController.swift */; };
+		FE542DA7296D9025002A3944 /* AirplayDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE542DA5296D9025002A3944 /* AirplayDeviceTableViewCell.xib */; };
+		FE542DA8296D9025002A3944 /* AirplayDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE542DA6296D9025002A3944 /* AirplayDeviceTableViewCell.swift */; };
+		FE542DAA296D902C002A3944 /* DLNA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE542DA9296D902C002A3944 /* DLNA.storyboard */; };
+		FE542DB3296EDA45002A3944 /* LocalNetworkAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE542DB2296EDA45002A3944 /* LocalNetworkAuthorization.swift */; };
+		FE6735B12934A74300586B80 /* M0.webp in Resources */ = {isa = PBXBuildFile; fileRef = FE6735AF2934A74300586B80 /* M0.webp */; };
+		FE6735B22934A74300586B80 /* M1.webp in Resources */ = {isa = PBXBuildFile; fileRef = FE6735B02934A74300586B80 /* M1.webp */; };
+		FE6735B52934AD2200586B80 /* AirplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6735B42934AD2200586B80 /* AirplayViewController.swift */; };
+		FEBDA9B42969612E00611683 /* DLNAWait.json in Resources */ = {isa = PBXBuildFile; fileRef = FEBDA9B32969612E00611683 /* DLNAWait.json */; };
+		FEC3ABAC293DC610002A1F23 /* AirplayControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC3ABAB293DC610002A1F23 /* AirplayControlViewController.swift */; };
+		FEF8E553293DFD9100E93AC7 /* DLNAConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF8E552293DFD9100E93AC7 /* DLNAConnectManager.swift */; };
+		FEF8E555293F4F5500E93AC7 /* AirplayControlViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF8E554293F4F5500E93AC7 /* AirplayControlViews.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B8D97F87E473A3E7CF782FB /* Pods-ZFPlayerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFPlayerTest.release.xcconfig"; path = "Target Support Files/Pods-ZFPlayerTest/Pods-ZFPlayerTest.release.xcconfig"; sourceTree = "<group>"; };
+		B07C99A0D870A7A1CFD62429 /* Pods-ZFPlayerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFPlayerTest.debug.xcconfig"; path = "Target Support Files/Pods-ZFPlayerTest/Pods-ZFPlayerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F2ADC0A83023FE81DEA5A426 /* Pods_ZFPlayerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFPlayerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0E99672899130B0017E6BC /* ZFPlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFPlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0E996A2899130B0017E6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE0E996E2899130B0017E6BC /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		FE0E99712899130B0017E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE0E99732899130D0017E6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0E99762899130D0017E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE0E99782899130D0017E6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0E997E289915420017E6BC /* BasePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlayerViewController.swift; sourceTree = "<group>"; };
+		FE0E9983289915A10017E6BC /* ZFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFUtilities.m; sourceTree = "<group>"; };
+		FE0E9984289915A10017E6BC /* UIView+ZFFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZFFrame.m"; sourceTree = "<group>"; };
+		FE0E9985289915A10017E6BC /* ZFResoureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFResoureLoader.h; sourceTree = "<group>"; };
+		FE0E9986289915A10017E6BC /* ZFSmallFloatControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSmallFloatControlView.h; sourceTree = "<group>"; };
+		FE0E9987289915A10017E6BC /* ZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerControlView.h; sourceTree = "<group>"; };
+		FE0E9988289915A10017E6BC /* ZFAVPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFAVPlayerManager.m; sourceTree = "<group>"; };
+		FE0E9989289915A10017E6BC /* ZFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSliderView.h; sourceTree = "<group>"; };
+		FE0E998A289915A10017E6BC /* ZFVolumeBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFVolumeBrightnessView.m; sourceTree = "<group>"; };
+		FE0E998B289915A10017E6BC /* ZFSpeedLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSpeedLoadingView.h; sourceTree = "<group>"; };
+		FE0E998C289915A10017E6BC /* ZFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLoadingView.h; sourceTree = "<group>"; };
+		FE0E998D289915A10017E6BC /* ZFLandScapeControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLandScapeControlView.m; sourceTree = "<group>"; };
+		FE0E998E289915A10017E6BC /* ZFNetworkSpeedMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFNetworkSpeedMonitor.m; sourceTree = "<group>"; };
+		FE0E998F289915A10017E6BC /* UIImageView+ZFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZFCache.h"; sourceTree = "<group>"; };
+		FE0E9990289915A10017E6BC /* ZFPortraitControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPortraitControlView.h; sourceTree = "<group>"; };
+		FE0E9991289915A10017E6BC /* ZFRippleEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRippleEffectView.m; sourceTree = "<group>"; };
+		FE0E9992289915A10017E6BC /* ZFPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFPlayer.bundle; sourceTree = "<group>"; };
+		FE0E9993289915A10017E6BC /* ZFResoureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFResoureLoader.m; sourceTree = "<group>"; };
+		FE0E9994289915A10017E6BC /* UIView+ZFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFFrame.h"; sourceTree = "<group>"; };
+		FE0E9995289915A10017E6BC /* ZFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFUtilities.h; sourceTree = "<group>"; };
+		FE0E9996289915A10017E6BC /* ZFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSliderView.m; sourceTree = "<group>"; };
+		FE0E9997289915A10017E6BC /* ZFAVPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFAVPlayerManager.h; sourceTree = "<group>"; };
+		FE0E9998289915A10017E6BC /* ZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerControlView.m; sourceTree = "<group>"; };
+		FE0E9999289915A10017E6BC /* ZFSmallFloatControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSmallFloatControlView.m; sourceTree = "<group>"; };
+		FE0E999A289915A10017E6BC /* ZFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLoadingView.m; sourceTree = "<group>"; };
+		FE0E999B289915A10017E6BC /* ZFSpeedLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSpeedLoadingView.m; sourceTree = "<group>"; };
+		FE0E999C289915A10017E6BC /* ZFVolumeBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFVolumeBrightnessView.h; sourceTree = "<group>"; };
+		FE0E999D289915A10017E6BC /* ZFRippleEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRippleEffectView.h; sourceTree = "<group>"; };
+		FE0E999E289915A10017E6BC /* ZFPortraitControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPortraitControlView.m; sourceTree = "<group>"; };
+		FE0E999F289915A10017E6BC /* UIImageView+ZFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZFCache.m"; sourceTree = "<group>"; };
+		FE0E99A0289915A10017E6BC /* ZFNetworkSpeedMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFNetworkSpeedMonitor.h; sourceTree = "<group>"; };
+		FE0E99A1289915A10017E6BC /* ZFLandScapeControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLandScapeControlView.h; sourceTree = "<group>"; };
+		FE0E99B2289915BA0017E6BC /* RoundCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersButton.swift; sourceTree = "<group>"; };
+		FE0E99B3289915BA0017E6BC /* RoundCornersImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersImageView.swift; sourceTree = "<group>"; };
+		FE0E99B4289915BB0017E6BC /* GlobalUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalUtil.swift; sourceTree = "<group>"; };
+		FE0E99B5289915BB0017E6BC /* RoundCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersView.swift; sourceTree = "<group>"; };
+		FE0E99BB289915C30017E6BC /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FE0E99BC289915C30017E6BC /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		FE0E99BD289915C30017E6BC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FE0E99BE289915C30017E6BC /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		FE0E99BF289915C30017E6BC /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		FE0E99C0289915C30017E6BC /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		FE0E99C1289915C30017E6BC /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
+		FE0E99C2289915C30017E6BC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FE0E99C3289915C30017E6BC /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		FE0E99C4289915C30017E6BC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FE0E99C5289915C30017E6BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FE0E99C6289915C30017E6BC /* UICollectionViewLayoutAttributesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewLayoutAttributesExtension.swift; sourceTree = "<group>"; };
+		FE0E99C7289915C30017E6BC /* ProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolExtension.swift; sourceTree = "<group>"; };
+		FE0E99D5289916120017E6BC /* ACThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACThumbnailGenerator.swift; sourceTree = "<group>"; };
+		FE0E99D72899161E0017E6BC /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		FE0E99D9289917620017E6BC /* BasePlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlayerViewModel.swift; sourceTree = "<group>"; };
+		FE0E99DB289918010017E6BC /* avnightBridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avnightBridgeHeader.h; sourceTree = "<group>"; };
+		FE0E99DC28991AC40017E6BC /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		FE10A3C7294B1A6700EC4CC5 /* AirplayControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayControlViewModel.swift; sourceTree = "<group>"; };
+		FE24A73C2935C5630005CBCD /* ZFPlayerTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZFPlayerTest.entitlements; sourceTree = "<group>"; };
+		FE28BFD228DAC0A2009D4406 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FE28BFD628DAC4AA009D4406 /* LittleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleCell.swift; sourceTree = "<group>"; };
+		FE28BFD728DAC4AB009D4406 /* LittleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LittleCell.xib; sourceTree = "<group>"; };
+		FE28BFDA28DAC5F9009D4406 /* BigCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCell.swift; sourceTree = "<group>"; };
+		FE28BFDB28DAC5F9009D4406 /* BigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigCell.xib; sourceTree = "<group>"; };
+		FE28BFDE28DACC31009D4406 /* ForCellPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCellPlayerView.swift; sourceTree = "<group>"; };
+		FE28BFE228DAFC73009D4406 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		FE542DA5296D9025002A3944 /* AirplayDeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirplayDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		FE542DA6296D9025002A3944 /* AirplayDeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirplayDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		FE542DA9296D902C002A3944 /* DLNA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DLNA.storyboard; sourceTree = "<group>"; };
+		FE542DB2296EDA45002A3944 /* LocalNetworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNetworkAuthorization.swift; sourceTree = "<group>"; };
+		FE6735AF2934A74300586B80 /* M0.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = M0.webp; sourceTree = "<group>"; };
+		FE6735B02934A74300586B80 /* M1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = M1.webp; sourceTree = "<group>"; };
+		FE6735B42934AD2200586B80 /* AirplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayViewController.swift; sourceTree = "<group>"; };
+		FEBDA9B32969612E00611683 /* DLNAWait.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DLNAWait.json; sourceTree = "<group>"; };
+		FEC3ABAB293DC610002A1F23 /* AirplayControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayControlViewController.swift; sourceTree = "<group>"; };
+		FEF8E552293DFD9100E93AC7 /* DLNAConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLNAConnectManager.swift; sourceTree = "<group>"; };
+		FEF8E554293F4F5500E93AC7 /* AirplayControlViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayControlViews.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0E99642899130B0017E6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF502EF04B1A5AF5745FF3C7 /* Pods_ZFPlayerTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D1F062033A285D8F7A3A7F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B07C99A0D870A7A1CFD62429 /* Pods-ZFPlayerTest.debug.xcconfig */,
+				6B8D97F87E473A3E7CF782FB /* Pods-ZFPlayerTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EAD84B6BC54CD6336EFEE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2ADC0A83023FE81DEA5A426 /* Pods_ZFPlayerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE0E995E2899130B0017E6BC = {
+			isa = PBXGroup;
+			children = (
+				FE0E99692899130B0017E6BC /* ZFPlayerTest */,
+				FE0E99682899130B0017E6BC /* Products */,
+				1D1F062033A285D8F7A3A7F6 /* Pods */,
+				6EAD84B6BC54CD6336EFEE7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0E99682899130B0017E6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E99672899130B0017E6BC /* ZFPlayerTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0E99692899130B0017E6BC /* ZFPlayerTest */ = {
+			isa = PBXGroup;
+			children = (
+				FE24A73C2935C5630005CBCD /* ZFPlayerTest.entitlements */,
+				FE0E996A2899130B0017E6BC /* AppDelegate.swift */,
+				FE0E99DC28991AC40017E6BC /* BaseUIViewController.swift */,
+				FE0E997E289915420017E6BC /* BasePlayerViewController.swift */,
+				FE0E99D9289917620017E6BC /* BasePlayerViewModel.swift */,
+				FE542DB92975050E002A3944 /* DLNA */,
+				FE6735B32934ACDC00586B80 /* PreviewPlay */,
+				FE6735AE2934A68700586B80 /* RollPlay */,
+				FE0E9981289915850017E6BC /* ThirdParty */,
+				FE0E99802899157B0017E6BC /* Other */,
+				FE0E99702899130B0017E6BC /* Main.storyboard */,
+				FE0E99D72899161E0017E6BC /* test.mp4 */,
+				FE6735AF2934A74300586B80 /* M0.webp */,
+				FE6735B02934A74300586B80 /* M1.webp */,
+				FE0E99732899130D0017E6BC /* Assets.xcassets */,
+				FE0E99DB289918010017E6BC /* avnightBridgeHeader.h */,
+				FE0E99752899130D0017E6BC /* LaunchScreen.storyboard */,
+				FE0E99782899130D0017E6BC /* Info.plist */,
+			);
+			path = ZFPlayerTest;
+			sourceTree = "<group>";
+		};
+		FE0E99802899157B0017E6BC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E99BA289915C30017E6BC /* Extension */,
+				FE0E99B4289915BB0017E6BC /* GlobalUtil.swift */,
+				FE0E99B2289915BA0017E6BC /* RoundCornersButton.swift */,
+				FE0E99B3289915BA0017E6BC /* RoundCornersImageView.swift */,
+				FE0E99B5289915BB0017E6BC /* RoundCornersView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FE0E9981289915850017E6BC /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E99D5289916120017E6BC /* ACThumbnailGenerator.swift */,
+				FE0E9982289915A10017E6BC /* CustomZFControlView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		FE0E9982289915A10017E6BC /* CustomZFControlView */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E9983289915A10017E6BC /* ZFUtilities.m */,
+				FE0E9984289915A10017E6BC /* UIView+ZFFrame.m */,
+				FE0E9985289915A10017E6BC /* ZFResoureLoader.h */,
+				FE0E9986289915A10017E6BC /* ZFSmallFloatControlView.h */,
+				FE0E9987289915A10017E6BC /* ZFPlayerControlView.h */,
+				FE0E9988289915A10017E6BC /* ZFAVPlayerManager.m */,
+				FE0E9989289915A10017E6BC /* ZFSliderView.h */,
+				FE0E998A289915A10017E6BC /* ZFVolumeBrightnessView.m */,
+				FE0E998B289915A10017E6BC /* ZFSpeedLoadingView.h */,
+				FE0E998C289915A10017E6BC /* ZFLoadingView.h */,
+				FE0E998D289915A10017E6BC /* ZFLandScapeControlView.m */,
+				FE0E998E289915A10017E6BC /* ZFNetworkSpeedMonitor.m */,
+				FE0E998F289915A10017E6BC /* UIImageView+ZFCache.h */,
+				FE0E9990289915A10017E6BC /* ZFPortraitControlView.h */,
+				FE0E9991289915A10017E6BC /* ZFRippleEffectView.m */,
+				FE0E9992289915A10017E6BC /* ZFPlayer.bundle */,
+				FE0E9993289915A10017E6BC /* ZFResoureLoader.m */,
+				FE0E9994289915A10017E6BC /* UIView+ZFFrame.h */,
+				FE0E9995289915A10017E6BC /* ZFUtilities.h */,
+				FE0E9996289915A10017E6BC /* ZFSliderView.m */,
+				FE0E9997289915A10017E6BC /* ZFAVPlayerManager.h */,
+				FE0E9998289915A10017E6BC /* ZFPlayerControlView.m */,
+				FE0E9999289915A10017E6BC /* ZFSmallFloatControlView.m */,
+				FE0E999A289915A10017E6BC /* ZFLoadingView.m */,
+				FE0E999B289915A10017E6BC /* ZFSpeedLoadingView.m */,
+				FE0E999C289915A10017E6BC /* ZFVolumeBrightnessView.h */,
+				FE0E999D289915A10017E6BC /* ZFRippleEffectView.h */,
+				FE0E999E289915A10017E6BC /* ZFPortraitControlView.m */,
+				FE0E999F289915A10017E6BC /* UIImageView+ZFCache.m */,
+				FE0E99A0289915A10017E6BC /* ZFNetworkSpeedMonitor.h */,
+				FE0E99A1289915A10017E6BC /* ZFLandScapeControlView.h */,
+			);
+			path = CustomZFControlView;
+			sourceTree = "<group>";
+		};
+		FE0E99BA289915C30017E6BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E99BB289915C30017E6BC /* UIButtonExtension.swift */,
+				FE0E99BC289915C30017E6BC /* UIImageViewExtension.swift */,
+				FE0E99BD289915C30017E6BC /* UIColorExtension.swift */,
+				FE0E99BE289915C30017E6BC /* UITextViewExtension.swift */,
+				FE0E99BF289915C30017E6BC /* ArrayExtension.swift */,
+				FE0E99C0289915C30017E6BC /* UILabelExtension.swift */,
+				FE0E99C1289915C30017E6BC /* UITabBarItemExtension.swift */,
+				FE0E99C2289915C30017E6BC /* UIViewControllerExtension.swift */,
+				FE0E99C3289915C30017E6BC /* UIStoryboardExtension.swift */,
+				FE0E99C4289915C30017E6BC /* UIViewExtension.swift */,
+				FE0E99C5289915C30017E6BC /* Extensions.swift */,
+				FE0E99C6289915C30017E6BC /* UICollectionViewLayoutAttributesExtension.swift */,
+				FE0E99C7289915C30017E6BC /* ProtocolExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FE542DB92975050E002A3944 /* DLNA */ = {
+			isa = PBXGroup;
+			children = (
+				FEBDA9B32969612E00611683 /* DLNAWait.json */,
+				FE6735B42934AD2200586B80 /* AirplayViewController.swift */,
+				FE542DA9296D902C002A3944 /* DLNA.storyboard */,
+				FE542DA6296D9025002A3944 /* AirplayDeviceTableViewCell.swift */,
+				FE542DA5296D9025002A3944 /* AirplayDeviceTableViewCell.xib */,
+				FEC3ABAB293DC610002A1F23 /* AirplayControlViewController.swift */,
+				FEF8E552293DFD9100E93AC7 /* DLNAConnectManager.swift */,
+				FEF8E554293F4F5500E93AC7 /* AirplayControlViews.swift */,
+				FE10A3C7294B1A6700EC4CC5 /* AirplayControlViewModel.swift */,
+				FE542DB2296EDA45002A3944 /* LocalNetworkAuthorization.swift */,
+			);
+			path = DLNA;
+			sourceTree = "<group>";
+		};
+		FE6735AE2934A68700586B80 /* RollPlay */ = {
+			isa = PBXGroup;
+			children = (
+				FE28BFD228DAC0A2009D4406 /* CollectionViewController.swift */,
+				FE28BFD628DAC4AA009D4406 /* LittleCell.swift */,
+				FE28BFD728DAC4AB009D4406 /* LittleCell.xib */,
+				FE28BFDA28DAC5F9009D4406 /* BigCell.swift */,
+				FE28BFDB28DAC5F9009D4406 /* BigCell.xib */,
+				FE28BFDE28DACC31009D4406 /* ForCellPlayerView.swift */,
+				FE28BFE228DAFC73009D4406 /* TestViewController.swift */,
+			);
+			path = RollPlay;
+			sourceTree = "<group>";
+		};
+		FE6735B32934ACDC00586B80 /* PreviewPlay */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E996E2899130B0017E6BC /* PreviewViewController.swift */,
+			);
+			path = PreviewPlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0E99662899130B0017E6BC /* ZFPlayerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0E997B2899130D0017E6BC /* Build configuration list for PBXNativeTarget "ZFPlayerTest" */;
+			buildPhases = (
+				9D7B049A268E3863C27CBF30 /* [CP] Check Pods Manifest.lock */,
+				FE0E99632899130B0017E6BC /* Sources */,
+				FE0E99642899130B0017E6BC /* Frameworks */,
+				FE0E99652899130B0017E6BC /* Resources */,
+				7DA2D54062751E6450166EAF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFPlayerTest;
+			productName = ZFPlayerTest;
+			productReference = FE0E99672899130B0017E6BC /* ZFPlayerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0E995F2899130B0017E6BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FE0E99662899130B0017E6BC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = FE0E99622899130B0017E6BC /* Build configuration list for PBXProject "ZFPlayerTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE0E995E2899130B0017E6BC;
+			productRefGroup = FE0E99682899130B0017E6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0E99662899130B0017E6BC /* ZFPlayerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0E99652899130B0017E6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6735B12934A74300586B80 /* M0.webp in Resources */,
+				FE28BFDD28DAC5F9009D4406 /* BigCell.xib in Resources */,
+				FE0E99A9289915A10017E6BC /* ZFPlayer.bundle in Resources */,
+				FE6735B22934A74300586B80 /* M1.webp in Resources */,
+				FE542DA7296D9025002A3944 /* AirplayDeviceTableViewCell.xib in Resources */,
+				FE542DAA296D902C002A3944 /* DLNA.storyboard in Resources */,
+				FEBDA9B42969612E00611683 /* DLNAWait.json in Resources */,
+				FE28BFD928DAC4AB009D4406 /* LittleCell.xib in Resources */,
+				FE0E99772899130D0017E6BC /* LaunchScreen.storyboard in Resources */,
+				FE0E99742899130D0017E6BC /* Assets.xcassets in Resources */,
+				FE0E99D82899161E0017E6BC /* test.mp4 in Resources */,
+				FE0E99722899130B0017E6BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DA2D54062751E6450166EAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZFPlayerTest/Pods-ZFPlayerTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZFPlayerTest/Pods-ZFPlayerTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZFPlayerTest/Pods-ZFPlayerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7B049A268E3863C27CBF30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFPlayerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0E99632899130B0017E6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE542DA8296D9025002A3944 /* AirplayDeviceTableViewCell.swift in Sources */,
+				FE28BFD328DAC0A2009D4406 /* CollectionViewController.swift in Sources */,
+				FE10A3C8294B1A6800EC4CC5 /* AirplayControlViewModel.swift in Sources */,
+				FEC3ABAC293DC610002A1F23 /* AirplayControlViewController.swift in Sources */,
+				FE28BFD828DAC4AB009D4406 /* LittleCell.swift in Sources */,
+				FE0E99B7289915BB0017E6BC /* RoundCornersImageView.swift in Sources */,
+				FE0E99A2289915A10017E6BC /* ZFUtilities.m in Sources */,
+				FE0E99CF289915C30017E6BC /* UIViewControllerExtension.swift in Sources */,
+				FE0E99D3289915C30017E6BC /* UICollectionViewLayoutAttributesExtension.swift in Sources */,
+				FE0E996F2899130B0017E6BC /* PreviewViewController.swift in Sources */,
+				FE28BFE328DAFC73009D4406 /* TestViewController.swift in Sources */,
+				FEF8E555293F4F5500E93AC7 /* AirplayControlViews.swift in Sources */,
+				FE0E99CE289915C30017E6BC /* UITabBarItemExtension.swift in Sources */,
+				FE0E99AA289915A10017E6BC /* ZFResoureLoader.m in Sources */,
+				FE0E99D1289915C30017E6BC /* UIViewExtension.swift in Sources */,
+				FE0E99CD289915C30017E6BC /* UILabelExtension.swift in Sources */,
+				FE0E99A6289915A10017E6BC /* ZFLandScapeControlView.m in Sources */,
+				FE0E99B0289915A10017E6BC /* ZFPortraitControlView.m in Sources */,
+				FE0E99B1289915A10017E6BC /* UIImageView+ZFCache.m in Sources */,
+				FE0E99C8289915C30017E6BC /* UIButtonExtension.swift in Sources */,
+				FE0E99A8289915A10017E6BC /* ZFRippleEffectView.m in Sources */,
+				FE0E99DA289917620017E6BC /* BasePlayerViewModel.swift in Sources */,
+				FE0E99AC289915A10017E6BC /* ZFPlayerControlView.m in Sources */,
+				FE0E99B8289915BB0017E6BC /* GlobalUtil.swift in Sources */,
+				FE0E99D6289916120017E6BC /* ACThumbnailGenerator.swift in Sources */,
+				FEF8E553293DFD9100E93AC7 /* DLNAConnectManager.swift in Sources */,
+				FE0E99D4289915C30017E6BC /* ProtocolExtension.swift in Sources */,
+				FE0E99AE289915A10017E6BC /* ZFLoadingView.m in Sources */,
+				FE0E99A5289915A10017E6BC /* ZFVolumeBrightnessView.m in Sources */,
+				FE0E99A3289915A10017E6BC /* UIView+ZFFrame.m in Sources */,
+				FE0E99C9289915C30017E6BC /* UIImageViewExtension.swift in Sources */,
+				FE0E99AF289915A10017E6BC /* ZFSpeedLoadingView.m in Sources */,
+				FE6735B52934AD2200586B80 /* AirplayViewController.swift in Sources */,
+				FE0E99A4289915A10017E6BC /* ZFAVPlayerManager.m in Sources */,
+				FE0E99CA289915C30017E6BC /* UIColorExtension.swift in Sources */,
+				FE0E99B6289915BB0017E6BC /* RoundCornersButton.swift in Sources */,
+				FE0E99A7289915A10017E6BC /* ZFNetworkSpeedMonitor.m in Sources */,
+				FE28BFDC28DAC5F9009D4406 /* BigCell.swift in Sources */,
+				FE542DB3296EDA45002A3944 /* LocalNetworkAuthorization.swift in Sources */,
+				FE28BFDF28DACC31009D4406 /* ForCellPlayerView.swift in Sources */,
+				FE0E996B2899130B0017E6BC /* AppDelegate.swift in Sources */,
+				FE0E99DD28991AC40017E6BC /* BaseUIViewController.swift in Sources */,
+				FE0E99CC289915C30017E6BC /* ArrayExtension.swift in Sources */,
+				FE0E99AD289915A10017E6BC /* ZFSmallFloatControlView.m in Sources */,
+				FE0E99D0289915C30017E6BC /* UIStoryboardExtension.swift in Sources */,
+				FE0E997F289915420017E6BC /* BasePlayerViewController.swift in Sources */,
+				FE0E99CB289915C30017E6BC /* UITextViewExtension.swift in Sources */,
+				FE0E99B9289915BB0017E6BC /* RoundCornersView.swift in Sources */,
+				FE0E99D2289915C30017E6BC /* Extensions.swift in Sources */,
+				FE0E99AB289915A10017E6BC /* ZFSliderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE0E99702899130B0017E6BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0E99712899130B0017E6BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE0E99752899130D0017E6BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0E99762899130D0017E6BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE0E99792899130D0017E6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE0E997A2899130D0017E6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE0E997C2899130D0017E6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07C99A0D870A7A1CFD62429 /* Pods-ZFPlayerTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = ZFPlayerTest/ZFPlayerTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UT7JST7CKN;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZFPlayerTest/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "点击允许才能链接投屏设备";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Always and When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Always Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location When In Use Usage Description";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9n3.app4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = av9_4_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ZFPlayerTest/avnightBridgeHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0E997D2899130D0017E6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B8D97F87E473A3E7CF782FB /* Pods-ZFPlayerTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = ZFPlayerTest/ZFPlayerTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UT7JST7CKN;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZFPlayerTest/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "点击允许才能链接投屏设备";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Always and When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Always Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location When In Use Usage Description";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9n3.app4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = av9_4_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ZFPlayerTest/avnightBridgeHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0E99622899130B0017E6BC /* Build configuration list for PBXProject "ZFPlayerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E99792899130D0017E6BC /* Debug */,
+				FE0E997A2899130D0017E6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0E997B2899130D0017E6BC /* Build configuration list for PBXNativeTarget "ZFPlayerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E997C2899130D0017E6BC /* Debug */,
+				FE0E997D2899130D0017E6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE0E995F2899130B0017E6BC /* Project object */;
+}

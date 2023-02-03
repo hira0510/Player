@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="AirplayDeviceTableViewCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AirplayDeviceTableViewCell" customModule="AVNight2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWn-7c-8Gy">
+                        <rect key="frame" x="0.0" y="0.0" width="33" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sya-yq-vIu">
+                                <rect key="frame" x="11" y="13" width="16" height="16"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basic_icon_check_2" translatesAutoresizingMaskIntoConstraints="NO" id="RMQ-7r-sCY">
+                                <rect key="frame" x="11" y="13" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RMQ-7r-sCY" secondAttribute="height" multiplier="1:1" id="YtJ-TI-7NP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="centerY" secondItem="sWn-7c-8Gy" secondAttribute="centerY" multiplier="42:40" id="9w9-pq-RyA"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="bottom" secondItem="Sya-yq-vIu" secondAttribute="bottom" id="Eai-tW-ecp"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="trailing" secondItem="Sya-yq-vIu" secondAttribute="trailing" id="OD1-yl-caS"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="width" secondItem="sWn-7c-8Gy" secondAttribute="width" multiplier="16:33" id="PZt-u2-bzC"/>
+                            <constraint firstAttribute="width" secondItem="sWn-7c-8Gy" secondAttribute="height" multiplier="33:40" id="bGP-Qk-vqJ"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="top" secondItem="Sya-yq-vIu" secondAttribute="top" id="qpc-dn-iNs"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="centerX" secondItem="sWn-7c-8Gy" secondAttribute="centerX" multiplier="38:33" id="t5q-Ek-YX0"/>
+                            <constraint firstItem="RMQ-7r-sCY" firstAttribute="leading" secondItem="Sya-yq-vIu" secondAttribute="leading" id="vRF-IP-iMU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaP-rg-dYi">
+                        <rect key="frame" x="35" y="0.0" width="330" height="40"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-CB-57L">
+                        <rect key="frame" x="0.0" y="40" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="y08-IC-Kxh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="sWn-7c-8Gy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6tQ-yA-4Nb"/>
+                    <constraint firstItem="Yfw-CB-57L" firstAttribute="top" secondItem="sWn-7c-8Gy" secondAttribute="bottom" id="AA3-gi-0LC"/>
+                    <constraint firstItem="Yfw-CB-57L" firstAttribute="top" secondItem="BaP-rg-dYi" secondAttribute="bottom" id="Q36-il-MpR"/>
+                    <constraint firstAttribute="trailing" secondItem="BaP-rg-dYi" secondAttribute="trailing" constant="10" id="RbI-g5-rXo"/>
+                    <constraint firstItem="Yfw-CB-57L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WAr-no-DLJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Yfw-CB-57L" secondAttribute="trailing" id="WtC-90-PIJ"/>
+                    <constraint firstItem="BaP-rg-dYi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iwm-Sj-CBS"/>
+                    <constraint firstItem="sWn-7c-8Gy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jAA-84-UKd"/>
+                    <constraint firstAttribute="bottom" secondItem="Yfw-CB-57L" secondAttribute="bottom" id="v0S-4j-mUV"/>
+                    <constraint firstItem="BaP-rg-dYi" firstAttribute="leading" secondItem="sWn-7c-8Gy" secondAttribute="trailing" constant="2" id="wYI-nO-RLF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="connectSucImageView" destination="RMQ-7r-sCY" id="Bvn-t3-KGU"/>
+                <outlet property="deviceLabel" destination="BaP-rg-dYi" id="gMc-WK-Kxh"/>
+                <outlet property="waitImageView" destination="Sya-yq-vIu" id="LDT-4Z-lPs"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-32.394366197183103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="basic_icon_check_2" width="14" height="14"/>
+    </resources>
+</document>
