@@ -199,14 +199,14 @@ class DLNAConnectManager {
      
     /// 設定播放、暫時播放進度
     public func setPositionTime(position: Double? = nil, temp: Double? = nil, hls: Double? = nil) {
+        if let hls = hls {
+            self.mChangeHlsSeekTime.accept(hls)
+        }
         if let position = position {
             self.mPositionTime.accept(position)
         }
         if let temp = temp {
             self.mPositionTempTime.accept(temp)
-        }
-        if let hls = hls {
-            self.mChangeHlsSeekTime.accept(hls)
         }
     }
     
@@ -304,9 +304,11 @@ class DLNAConnectManager {
     /// 調整播放進度
     public func seekTo(_ sec: Double) {
         guard let mediaControl = self.mMediaControl else { return }
+        self.setPositionTime(hls: 0)
         mediaControl.seek(sec) { [weak self] _ in
             guard let `self` = self else { return }
-            self.setPositionTime(position: sec, temp: sec, hls: 0)
+            print("重點測試🟢2 sec:\(sec)")
+            self.setPositionTime(position: sec, temp: sec)
             self.timerAddFunc()
             self.debugMsg(.video(.seek), setSuc: true, value: sec)
         } failure: { [weak self] error in
@@ -432,7 +434,11 @@ class DLNAConnectManager {
 
         guard let mediaPlayer = device.mediaPlayer() else { return }
         self.debugMsg(.video(.changeHls2), setSuc: true, value: mPositionTime.value)
-        self.setPositionTime(position: 0, temp: 0, hls: mPositionTime.value)
+        print("重點測試🟢2 hls:\(mPositionTime.value), bef: \(mChangeHlsSeekTime.value)")
+        if mPositionTime.value > 3 {
+            self.setPositionTime(hls: mPositionTime.value)
+        }
+        self.setPositionTime(position: 0, temp: 0)
         
         mediaPlayer.playMedia(with: mediaInfo, shouldLoop: false, success: { [weak self] mediaLaunchObject in
             guard let  `self` = self else { return }
